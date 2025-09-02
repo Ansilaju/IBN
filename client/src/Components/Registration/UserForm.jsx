@@ -8,7 +8,7 @@ import {
   faMapMarkerAlt,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import "./userform.css";
+import "./userForm.css";
 import {
   FaBuilding,
   FaEnvelope,
