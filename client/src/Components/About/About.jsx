@@ -223,9 +223,9 @@ const About = () => {
                   </span>
                 </button>
                 <div
-                  className={`faq-answer ${openIndex === index ? "open" : ""}`}
+                  className={`faq - answer${openIndex === index ? "open" : ""}`}
                 >
-                  <p>{faq.answer}</p>
+                  {openIndex === index && <p>{faq.answer}</p>}
                 </div>
               </div>
             ))}
