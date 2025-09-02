@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainabout {
+  background-color: black;
+}
+
+.abouthed h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+/* h1,
+h2,
+h5 {
+  font-family: "DM Serif Text", serif;
+  color: #fff;
+} */
+/* h4 {
+  font-family: "Inter", sans-serif;
+} */
+
+.abouthed {
+  text-align: center;
+  padding-top: 120px;
+  color: #f4ebeb;
+}
+
+.aboutbod {
+  color: #f4ebeb;
+  margin-left: 100px;
+  padding-top: 60px;
+  line-height: 1.8;
+}
+.aboutbod p {
+  color: gray;
+}
+.abouthed p {
+  color: gray;
+}
+
+.aboutib h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.aboutvismi,
+.aboutvismis {
+  color: #f4ebeb;
+  margin: 50px 60px 0 60px;
+  border: 2px solid #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutvismi h2,
+.aboutvismis h2 {
+  padding-top: 2%;
+  color: #f4ebeb;
+  font-size: 2rem;
+}
+
+.aboutvismi p,
+.aboutvismis p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #010b24, #16016c, #010b24);
+  color: white;
+}
+button:active {
+  transform: translateY(0);
+}
+
+.imgg {
+  position: absolute;
+  left: 1200px;
+  top: 1200px;
+}
+
+.imgg img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.vismi {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutbod {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+
+  .aboutvismi,
+  .aboutvismis {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .imgg {
+    left: 50%;
+    top: 1800px;
+    transform: translateX(-50%);
+  }
+}
+
+.mission-section {
+  background-color: black;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.mission-box {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-box:hover {
+  transform: translateY(-8px);
+}
+
+.mission-box h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mission-box p {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 20px;
+  background-color: black;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.faq-subtitle {
+  font-size: 1rem;
+  color: #c4c4c4;
+  margin-bottom: 40px;
+}
+
+/* FAQ List */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(4, 43, 142, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(2, 23, 161, 0.2);
+  border-color: rgba(41, 4, 190, 0.4);
+}
+
+/* Question Button */
+.faq-question {
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 18px 25px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.faq-question.active {
+  color: #fff;
+  background: linear-gradient(90deg, #010b24, #16016c, #010b24);
+  border-radius: 12px;
+}
+
+.faq-icon {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Answer */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 25px;
+}
+
+.faq-answer.open {
+  max-height: 500px; /* enough height for most content */
+  padding: 15px 25px;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 1.8rem;
+  }
+  .faq-question {
+    font-size: 0.95rem;
+  }
+  .faq-answer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* UAE Partner Section */
+.uae-partner {
+  background-color: black;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.uae-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.uae-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.uae-logo img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.uae-info {
+  text-align: left;
+  max-width: 500px;
+}
+
+.uae-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.uae-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .uae-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .uae-info {
+    text-align: center;
+  }
+}

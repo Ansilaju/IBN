@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.portfolio-wrapper {
+  margin-top: 90px;
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.head h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+.portp p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+}
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 30px 0 50px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.portfolio-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #aaa;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn.active {
+  color: #fff;
+  background: linear-gradient(to right, #010b24, #16016c, #010b24);
+
+  transform: translateY(-2px);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-card {
+  background: rgba(26, 26, 62, 0.6);
+  border-radius: 20px;
+  padding: 0.5rem;
+  border: 1px solid rgba(50, 212, 255, 0.2);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(50, 212, 255, 0.4);
+  box-shadow: 0 15px 30px rgba(50, 212, 255, 0.2);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 15px;
+}
+
+.placeholder {
+  background: #333;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+@media (max-width: 992px) {
+  .portfolio-card {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-card {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-card {
+    height: 180px;
+  }
+}
