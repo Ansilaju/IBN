@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../studentRegistration/StudentForm.css";
+import { BASE_URL } from "../../config.js";
 
 const Beginner = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const Beginner = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:5000/api/courses/advancedmastery/Register",
+        `${BASE_URL}/api/courses/advancedmastery/Register`,
         formData
       );
       alert("✅ Student registered successfully!");

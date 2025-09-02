@@ -16,6 +16,7 @@ import {
   FaPhone,
   FaUser,
 } from "react-icons/fa";
+import { BASE_URL } from "../../config";
 
 const UserForm = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ const UserForm = () => {
 
     try {
       const payload = { ...formData };
-      await axios.post("http://localhost:5000/api/users/register", payload);
+      await axios.post(`${BASE_URL}/api/users/register`, payload);
       setMessage("✅ User registered successfully!");
       alert("✅ User registered successfully!");
       setFormData({

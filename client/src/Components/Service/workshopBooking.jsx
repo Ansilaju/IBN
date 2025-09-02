@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./WorkshopBooking.css";
+import { BASE_URL } from "../../config";
 
 const WorkshopBooking = () => {
   const [formData, setFormData] = useState({ name: "", phone: "", date: "" });
@@ -12,10 +13,7 @@ const WorkshopBooking = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/workshop/book",
-        formData
-      );
+      const res = await axios.post(`${BASE_URL}/api/workshop/book`, formData);
       if (res.status === 201) {
         setSuccessMessage("🎉 Workshop booked successfully!");
         setFormData({ name: "", phone: "", date: "" });
@@ -49,7 +47,7 @@ const WorkshopBooking = () => {
           required
         />
 
-        <label>Select Date</label>
+        <label>Meeting Date</label>
         <input
           type="date"
           name="date"

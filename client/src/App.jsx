@@ -8,7 +8,7 @@ import Whatsapp from "./Components/Whatsapp/Whatsapp.jsx";
 
 // Lazy load components
 const UserForm = lazy(() => import("./Components/Registration/UserForm"));
-const About = lazy(() => import("./Components/About/about"));
+
 const Members = lazy(() => import("./Components/Members/Members.jsx"));
 const Home = lazy(() => import("./Components/Home/Home"));
 const StudentForm = lazy(() =>
@@ -29,6 +29,7 @@ const Basic = lazy(() => import("./Components/Courses/Basic.jsx"));
 const Advancedmastery = lazy(() =>
   import("./Components/Courses/Advancedmastery.jsx")
 );
+const About = lazy(() => import("./Components/About/about.jsx"));
 const Advancedvfx = lazy(() => import("./Components/Courses/Advancedvfx.jsx"));
 const Backend = lazy(() => import("./Components/Courses/Backenddev.jsx"));
 const Beginner = lazy(() => import("./Components/Courses/Beginner.jsx"));

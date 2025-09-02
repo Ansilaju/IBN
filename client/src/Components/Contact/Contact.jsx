@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Contact.css";
 import { FaPhone, FaEnvelope, FaArrowRight } from "react-icons/fa";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { BASE_URL } from "../../config";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ const Contact = () => {
     setStatusMessage("Sending...");
 
     try {
-      await axios.post("http://localhost:5000/api/contact/contact", formData);
+      await axios.post(`${BASE_URL}/api/contact/contact`, formData);
       setStatusMessage("Message sent successfully ✅");
       setFormData({ name: "", phone: "", message: "" });
     } catch (error) {
