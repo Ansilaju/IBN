@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./WorkshopBooking.css";
+import "./workshopBooking.css";
 import { BASE_URL } from "../../config";
 
 const WorkshopBooking = () => {
