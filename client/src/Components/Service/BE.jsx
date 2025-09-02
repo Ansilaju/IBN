@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WorkshopBooking from "./WorkshopBooking";
+import WorkshopBooking from "./workshopBooking.jsx";
 import "./BE.css";
 
 const BE = () => {
