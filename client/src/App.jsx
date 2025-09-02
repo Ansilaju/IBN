@@ -42,7 +42,7 @@ const Intermediate = lazy(() =>
 const Launchpad = lazy(() => import("./Components/Courses/Launchpad.jsx"));
 const Zerotohero = lazy(() => import("./Components/Courses/Zerotohero.jsx"));
 const BE = lazy(() => import("./Components/Service/BE.jsx"));
-const Servicemain = lazy(() => import("./Components/Service/servicemain.jsx"));
+const Servicemain = lazy(() => import("./Components/Service/Servicemain.jsx"));
 const Businessnetworking = lazy(() =>
   import("./Components/Service/Businessnetworking.jsx")
 );
