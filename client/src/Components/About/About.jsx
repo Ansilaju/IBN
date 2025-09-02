@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
-import "./About.css";
+import "./about.css";
 import "aos/dist/aos.css";
 
 const About = () => {
