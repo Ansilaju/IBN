@@ -617,6 +617,13 @@ body {
   height: 100%;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .hero-background img {
+    height: 85%;
+  }
+}
+
 .hero-background1 img {
   position: absolute;
   top: 0;

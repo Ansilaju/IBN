@@ -220,6 +220,12 @@
   gap: 30px;
 }
 
+@media (max-width: 768px) {
+  .ibn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Card */
 .ibn-cardsssss {
   background: transparent;
