@@ -205,6 +205,7 @@ const Businessnetworking = () => {
             </div>
           </div>
         </section>
+
         <section className="companies-section" data-aos="fade-right">
           <div className="container">
             <h2 className="companies-title">Our Valued Members</h2>

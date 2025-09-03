@@ -54,8 +54,6 @@ const Servicemain = () => {
             </div>
           </div>
         </section>
-        {/* Optional footer hook if you add one later */}
-        {/* <footer className="service-page-footer">© Your Company</footer> */}
            
       </div>
        

@@ -20,8 +20,6 @@ h1 {
   font-weight: 800;
   text-transform: uppercase;
   color: white;
-
-  margin-bottom: 20px;
 }
 
 h2,
@@ -37,6 +35,7 @@ p {
   text-align: center;
   background-color: black;
   color: white;
+  margin-top: 170px;
 }
 
 .service-page-btn-box {

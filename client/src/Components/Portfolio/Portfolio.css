@@ -117,18 +117,18 @@
 
 @media (max-width: 992px) {
   .portfolio-card {
-    height: 220px;
+    height: 270px;
   }
 }
 
 @media (max-width: 768px) {
   .portfolio-card {
-    height: 200px;
+    height: 400px;
   }
 }
 
 @media (max-width: 480px) {
   .portfolio-card {
-    height: 180px;
+    height: 270px;
   }
 }

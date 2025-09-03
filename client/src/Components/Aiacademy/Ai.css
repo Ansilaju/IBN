@@ -582,76 +582,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Navigation */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-.nav-logo h2 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: linear-gradient(45deg, #ffffff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: white;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background: linear-gradient(45deg, #ffffff, #ffffff);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
 .bar {
   width: 25px;
   height: 3px;
@@ -673,6 +603,11 @@ body {
   overflow: hidden;
   margin-top: 90px;
 }
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 20px;
+  }
+}
 
 .hero-background img {
   position: absolute;
@@ -692,9 +627,18 @@ body {
 }
 @media (max-width: 768px) {
   .hero-background1 img {
-    display: none;
+    top: 280px;
+    height: 60vh;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-background1 img {
+    top: 440px;
+    height: 40vh;
+  }
+}
+
 .floating-elements {
   position: absolute;
   width: 100%;
