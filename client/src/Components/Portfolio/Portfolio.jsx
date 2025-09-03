@@ -25,6 +25,14 @@ const Portfolio = () => {
     { category: "courses", img: "/poster9.webp" },
     { category: "courses", img: "/poster5.webp" },
     { category: "courses", img: "/poster11.webp" },
+    {
+      category: "courses",
+      img: "/WhatsApp Image 2025-09-03 at 09.31.56_11b38df3.webp",
+    },
+    {
+      category: "courses",
+      img: "/WhatsApp Image 2025-09-03 at 09.33.16_002a78b6.webp",
+    },
   ];
 
   const categories = [

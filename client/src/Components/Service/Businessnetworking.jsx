@@ -206,7 +206,7 @@ const Businessnetworking = () => {
           </div>
         </section>
 
-        <section className="companies-section" data-aos="fade-right">
+        {/* <section className="companies-section" data-aos="fade-right">
           <div className="container">
             <h2 className="companies-title">Our Valued Members</h2>
             <p className="companies-subtitle">
@@ -223,7 +223,7 @@ const Businessnetworking = () => {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

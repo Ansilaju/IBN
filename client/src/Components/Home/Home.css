@@ -416,6 +416,11 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 768px) {
+  .servicepage-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .ibn-footer p {
   font-size: 16px;

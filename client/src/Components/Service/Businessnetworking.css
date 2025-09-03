@@ -241,7 +241,7 @@
     max-width: 100%;
   }
 }
-
+/* 
 .companies-section {
   padding: 80px 20px;
   background: black;
@@ -296,7 +296,6 @@
   background: #a30016;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .companies-preview {
     gap: 20px;
@@ -304,4 +303,4 @@
   .companies-preview img {
     width: 80px;
   }
-}
+} */

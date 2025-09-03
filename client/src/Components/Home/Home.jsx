@@ -60,10 +60,6 @@ const Home = () => {
               <h2 className="servicepage-title">
                 What We Are Offering For You?
               </h2>
-              {/* <p className="servicepage-description">
-                As a digital marketing agency, we cover multiple aspects of
-                online growth. Here’s what we do best.
-              </p> */}
             </div>
           </div>
 
