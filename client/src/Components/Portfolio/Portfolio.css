@@ -80,11 +80,12 @@
 .portfolio-card {
   background: rgba(26, 26, 62, 0.6);
   border-radius: 20px;
+  height: 10px;
   padding: 0.5rem;
   border: 1px solid rgba(50, 212, 255, 0.2);
   backdrop-filter: blur(10px);
   overflow: hidden;
-  height: 350px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,18 +118,17 @@
 
 @media (max-width: 992px) {
   .portfolio-card {
-    height: 270px;
+    height: 450px;
   }
 }
 
 @media (max-width: 768px) {
   .portfolio-card {
-    height: 400px;
+    height: 500px;
   }
 }
-
 @media (max-width: 480px) {
   .portfolio-card {
-    height: 270px;
+    height: 500px;
   }
 }
