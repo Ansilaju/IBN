@@ -9,8 +9,38 @@ import {
   FaHeart,
   FaArrowRight,
 } from "react-icons/fa";
+import axios from "axios";
+import { BASE_URL } from "../../config";
 
 const Home = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: "",
+  });
+
+  const [statusMessage, setStatusMessage] = useState("");
+
+  // handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // handle form submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatusMessage("Sending...");
+
+    try {
+      await axios.post(`${BASE_URL}/api/contact/contact`, formData);
+      setStatusMessage("Message sent successfully ✅");
+      setFormData({ name: "", phone: "", message: "" });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setStatusMessage("Something went wrong ❌");
+    }
+  };
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -191,7 +221,7 @@ const Home = () => {
       <div className="hero-buttons" data-aos="fade-right">
         <a href="/portfolio">VIEW ALL PROJECTS</a>
       </div>
-      <header className="hero">
+      {/* <header className="hero">
         <div className="hero-inner" data-aos="fade-right">
           <button className="btn-outline">Contact us</button>
 
@@ -203,7 +233,44 @@ const Home = () => {
             <span className="letss">Let’s Talk</span>
           </a>
         </div>
-      </header>
+      </header> */}
+      <div className="contact-form">
+        <h2 className="contact-title">Let's Talk....</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            rows="5"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <button type="submit" className="submit-btn">
+            Send Message <FaArrowRight />
+          </button>
+        </form>
+
+        {/* Status Message */}
+        {statusMessage && <p className="status-msg">{statusMessage}</p>}
+      </div>
     </div>
   );
 };

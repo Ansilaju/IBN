@@ -30,7 +30,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/servicemain">Services</Link>
+              <Link to="/servicemain" onClick={closeMenu}>
+                Services
+              </Link>
             </li>
 
             <li>

@@ -4,10 +4,13 @@ import "./Whatsapp.css";
 
 const Whatsapp = () => {
   const phoneNumber = "7030009000";
+  const message = encodeURIComponent(
+    "Hello! I'm interested in your services. Please tell me more."
+  );
   return (
     <div>
       <a
-        href={`https://wa.me/${phoneNumber}`}
+        href={`https://wa.me/${phoneNumber}?text=${message}`}
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"

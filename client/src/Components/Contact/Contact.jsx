@@ -49,23 +49,19 @@ const Contact = () => {
           {/* Contact Info */}
           {/* Contact Info */}
           <div className="contact-info">
-            <h2 className="contact-title">Kerala Office</h2>
+            <h2 className="contact-title">CORPORATE OFFICE</h2>
             <p className="contact-text">
               Palayam, Thiruvananthapuram, Kerala 695009
             </p>
+            <p className="contact-text">+91 70 3000 9000</p>
 
-            <h2 className="contact-title">Dubai Office</h2>
+            <h2 className="contact-title">INTERNATIONAL HEAD OFFICE</h2>
             <p className="contact-text">
               P.O. Box 341662, Shed No 369, Plot No 538, Umm Suqeim Street,{" "}
               <br />
               Al Quoz Industrial Area 4, Area 4, Dubai, U.A.E
             </p>
-
-            <h2 className="contact-title">Phone</h2>
-            <p className="contact-text">
-              <FaPhone /> +91 70 3000 9000
-              <div className="dubai-phone">+97143250413</div>
-            </p>
+            <p className="contact-texT">+97143250413</p>
 
             <h2 className="contact-title">Email</h2>
             <p className="contact-text">
@@ -117,16 +113,25 @@ const Contact = () => {
 
         {/* Google Maps */}
         <div className="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.23768458377117!2d76.94551756882306!3d8.500652454792643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbf5fb4cd94f%3A0xf50133ce6cf5d47d!2sINTERNATIONAL%20BUSINESS%20NETWORK%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1756785121058!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style={{ border: "0" }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps Location"
-          ></iframe>
+          <div className="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.23768458377117!2d76.94551756882306!3d8.500652454792643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbf5fb4cd94f%3A0xf50133ce6cf5d47d!2sINTERNATIONAL%20BUSINESS%20NETWORK%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1756785121058!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: "0" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Location"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps?q=INTERNATIONAL+BUSINESS+NETWORK+SOLUTIONS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="map-link-overlay"
+              aria-label="Open in Google Maps"
+            ></a>
+          </div>
         </div>
       </div>
     </div>

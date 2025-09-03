@@ -767,3 +767,97 @@ body {
     font-size: 2rem;
   }
 }
+.contact-form {
+  margin-top: 30px;
+  margin-left: 280px;
+  flex: 1.2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60vw;
+  background-color: white;
+}
+@media (max-width: 1024px) {
+  .contact-form {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 50%;
+  margin-left: 200px;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: transparent;
+  border: 1px solid #444;
+  color: #000;
+  border-radius: 5px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .contact-form input,
+  .contact-form textarea {
+    margin-left: 100px;
+    width: 60%;
+  }
+}
+
+/* Button */
+.contact-form .submit-btn {
+  margin-left: 330px;
+  background: rgb(21, 20, 20);
+  color: rgb(246, 245, 245);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-start; /* keeps button aligned left */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .contact-form .submit-btn {
+    margin-left: 30px;
+  }
+}
+
+.contact-form .submit-btn:hover {
+  background: linear-gradient(to right, #010b24, #16016c, #010b24);
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  .contact-form .submit-btn {
+    align-self: center; /* centers button on mobile */
+  }
+}
+.status-msg {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #32d4ff; /* visible blue for success */
+}
+
+.status-msg.error {
+  color: #ff4d4f; /* red for error */
+}
+.contact-title {
+  color: black;
+}
