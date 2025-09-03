@@ -814,6 +814,13 @@ body {
     width: 60%;
   }
 }
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea {
+    margin-left: 70px;
+    width: 60%;
+  }
+}
 
 /* Button */
 .contact-form .submit-btn {

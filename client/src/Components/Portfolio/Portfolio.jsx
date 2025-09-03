@@ -9,7 +9,6 @@ const Portfolio = () => {
 
     { category: "poster", img: "/poster1.webp" },
 
-    { category: "poster", img: "/poster6.webp" },
     { category: "poster", img: "/poster7.webp" },
     { category: "poster", img: "/poster8.webp" },
 
