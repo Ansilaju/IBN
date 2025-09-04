@@ -101,7 +101,7 @@ const About = () => {
         <div className="uae-container">
           <div className="uae-logo">
             <img
-              src="/BROS GROUPS LOGO.webp"
+              src="/BROS_GROUPS_LOGO[1].webp"
               alt="UAE Partner Logo"
               loading="lazy"
             />
@@ -115,9 +115,6 @@ const About = () => {
             </p>
             <p>
               <strong>Phone:</strong> +971 4 32 50 413
-            </p>
-            <p>
-              <strong>Email:</strong> hello@brosgroups.com
             </p>
           </div>
         </div>

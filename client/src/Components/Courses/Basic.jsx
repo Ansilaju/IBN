@@ -3,7 +3,7 @@ import axios from "axios";
 import "../studentRegistration/StudentForm.css";
 import { BASE_URL } from "../../config";
 
-const Basic = () => {
+const Beginner = () => {
   const [formData, setFormData] = useState({
     Name: "",
     Qualification: "",
@@ -11,7 +11,7 @@ const Basic = () => {
     Phone: "",
   });
 
-  const [message, setMessage] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
   // Handle input changes
   const handleChange = (e) => {
     setFormData({
@@ -23,9 +23,10 @@ const Basic = () => {
   // Submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatusMessage("Sending...");
     try {
-      await axios.post(`${BASE_URL}/api/courses/basic/Register`, formData);
-      alert("✅ Student registered successfully!");
+      await axios.post(`${BASE_URL}/api/courses/Fullstack/Register`, formData);
+      setStatusMessage("Registered successfully ✅");
       setFormData({ Name: "", Qualification: "", Email: "", Phone: "" });
     } catch (error) {
       console.error("Error registering student:", error);
@@ -98,17 +99,12 @@ const Basic = () => {
             <button className="btn" type="submit">
               Register
             </button>
-
-            {message && (
-              <p style={{ textAlign: "center", marginTop: "10px" }}>
-                {message}
-              </p>
-            )}
           </form>
+          {statusMessage && <p className="status-msg">{statusMessage}</p>}
         </section>
       </main>
     </div>
   );
 };
 
-export default Basic;
+export default Beginner;

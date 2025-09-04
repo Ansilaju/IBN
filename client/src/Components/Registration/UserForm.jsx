@@ -27,7 +27,7 @@ const UserForm = () => {
     PhoneNumber: "",
   });
 
-  const [message, setMessage] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -35,12 +35,13 @@ const UserForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setStatusMessage("Sending...");
     try {
       const payload = { ...formData };
+
       await axios.post(`${BASE_URL}/api/users/register`, payload);
-      setMessage("✅ User registered successfully!");
-      alert("✅ User registered successfully!");
+      setStatusMessage("✅ User registered successfully!");
+
       setFormData({
         Name: "",
         Email: "",
@@ -135,10 +136,8 @@ const UserForm = () => {
               <button type="submit" className="create-btn">
                 Register
               </button>
-              {message && (
-                <p style={{ marginTop: "10px", color: "green" }}>{message}</p>
-              )}
             </form>
+            {statusMessage && <p className="status-msg">{statusMessage}</p>}
           </div>
         </div>
       </div>

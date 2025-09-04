@@ -102,3 +102,14 @@
     padding: 30px 20px;
   }
 }
+
+.status-msg {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #32d4ff; /* visible blue for success */
+}
+
+.status-msg.error {
+  color: #ff4d4f; /* red for error */
+}

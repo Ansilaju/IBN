@@ -11,7 +11,7 @@ const Beginner = () => {
     Phone: "",
   });
 
-  const [message, setMessage] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
   // Handle input changes
   const handleChange = (e) => {
     setFormData({
@@ -23,9 +23,10 @@ const Beginner = () => {
   // Submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatusMessage("Sending...");
     try {
-      await axios.post(`${BASE_URL}/api/courses/Zerotohero/Register`, formData);
-      alert("✅ Student registered successfully!");
+      await axios.post(`${BASE_URL}/api/courses/Fullstack/Register`, formData);
+      setStatusMessage("Registered successfully ✅");
       setFormData({ Name: "", Qualification: "", Email: "", Phone: "" });
     } catch (error) {
       console.error("Error registering student:", error);
@@ -37,7 +38,7 @@ const Beginner = () => {
     <div className="bodd">
       <main className="center">
         <section className="card" role="region" aria-label="Registration form">
-          <h1 className="title">Zero To Hero in Cyber Security</h1>
+          <h1 className="title">Zero to Hero in Cyber Security</h1>
           <form className="form" onSubmit={handleSubmit} autoComplete="on">
             <div className="field">
               <input
@@ -98,13 +99,8 @@ const Beginner = () => {
             <button className="btn" type="submit">
               Register
             </button>
-
-            {message && (
-              <p style={{ textAlign: "center", marginTop: "10px" }}>
-                {message}
-              </p>
-            )}
           </form>
+          {statusMessage && <p className="status-msg">{statusMessage}</p>}
         </section>
       </main>
     </div>

@@ -53,7 +53,7 @@ const Contact = () => {
             <p className="contact-text">
               Palayam, Thiruvananthapuram, Kerala 695009
             </p>
-            <p className="contact-text">+91 70 3000 9000</p>
+            <p className="contact-text">+91 7030009000</p>
 
             <h2 className="contact-title">INTERNATIONAL HEAD OFFICE</h2>
             <p className="contact-text">
@@ -66,8 +66,6 @@ const Contact = () => {
             <h2 className="contact-title">Email</h2>
             <p className="contact-text">
               <FaEnvelope /> contact@Ibnsu.com
-              <br />
-              <FaEnvelope /> hello@brosgroups.com
             </p>
           </div>
 
