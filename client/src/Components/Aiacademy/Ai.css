@@ -620,7 +620,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-background img {
-    height: 85%;
+    display: none;
   }
 }
 
@@ -634,15 +634,13 @@ body {
 }
 @media (max-width: 768px) {
   .hero-background1 img {
-    top: 280px;
-    height: 60vh;
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
   .hero-background1 img {
-    top: 440px;
-    height: 40vh;
+    display: none;
   }
 }
 
