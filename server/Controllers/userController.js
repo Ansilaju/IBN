@@ -36,7 +36,7 @@ export const registerUser = async (req, res) => {
       html: `
         <h3>New User Registered</h3>
         <p><strong>Name:</strong> ${Name || "N/A"}</p>
-        <p>strong>Email:</strong> ${Email}</p>
+        <p><strong>Email:</strong> ${Email}</p>
         <p><strong>Business Name:</strong> ${BusinessName}</p>
         <p><strong>District:</strong> ${Place}</p>
         <p><strong>Phone Number:</strong> ${PhoneNumber}</p>
