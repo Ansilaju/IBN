@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import axios from "axios";
 import { BASE_URL } from "../../config";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [formData, setFormData] = useState({
@@ -94,55 +95,60 @@ const Home = () => {
           </div>
 
           <div className="servicepage-grid">
-            <div className="servicepage-card">
-              <div className="servicepage-icon purple">
-                <FaUsers />
+            <Link to="/Businessnetworking" className="servicepage-card-link">
+              <div className="servicepage-card">
+                <div className="servicepage-icon purple">
+                  <FaUsers />
+                </div>
+                <h3 className="servicepage-card-title">
+                  Business Networking Solution
+                </h3>
+                <p className="servicepage-text">
+                  Connect with enterprises, professionals, and investors
+                  seamlessly. Build strong partnerships, expand your reach, and
+                  grow your business efficiently with IBN Solutions.
+                </p>
               </div>
-              <h3 className="servicepage-card-title">
-                Business Networking Solution
-              </h3>
-              <p className="servicepage-text">
-                Connect with entrepreneurs, professionals, and investors
-                seamlessly. Build strong partnerships, expand your reach, and
-                grow your business efficiently with IBN Solutions.
-              </p>
-            </div>
-
-            <div className="servicepage-card">
-              <div className="servicepage-icon purple">
-                <FaChartLine />
+            </Link>
+            <Link to="/digitalmarketing" className="servicepage-card-link">
+              <div className="servicepage-card">
+                <div className="servicepage-icon purple">
+                  <FaChartLine />
+                </div>
+                <h3 className="servicepage-card-title">Digital Marketing</h3>
+                <p className="servicepage-text">
+                  Boost your online presence with result-driven digital
+                  marketing strategies, including social media campaigns, SEO
+                  optimization, content marketing, and paid advertising.
+                </p>
               </div>
-              <h3 className="servicepage-card-title">Digital Marketing</h3>
-              <p className="servicepage-text">
-                Boost your online presence with result-driven digital marketing
-                strategies, including social media campaigns, SEO optimization,
-                content marketing, and paid advertising.
-              </p>
-            </div>
-
-            <div className="servicepage-card">
-              <div className="servicepage-icon purple">
-                <FaBrain />
+            </Link>
+            <Link to="/Aimain" className="servicepage-card-link">
+              <div className="servicepage-card">
+                <div className="servicepage-icon purple">
+                  <FaBrain />
+                </div>
+                <h3 className="servicepage-card-title">AI Academy</h3>
+                <p className="servicepage-text">
+                  Learn the latest in artificial intelligence with hands-on
+                  courses, practical projects, and expert mentorship to stay
+                  ahead in the fast-evolving AI industry.
+                </p>
               </div>
-              <h3 className="servicepage-card-title">AI Academy</h3>
-              <p className="servicepage-text">
-                Learn the latest in artificial intelligence with hands-on
-                courses, practical projects, and expert mentorship to stay ahead
-                in the fast-evolving AI industry.
-              </p>
-            </div>
-
-            <div className="servicepage-card">
-              <div className="servicepage-icon purple">
-                <FaHeart />
+            </Link>
+            <Link to="/BE" className="servicepage-card-link">
+              <div className="servicepage-card">
+                <div className="servicepage-icon purple">
+                  <FaHeart />
+                </div>
+                <h3 className="servicepage-card-title">Family Enrichment</h3>
+                <p className="servicepage-text">
+                  Enhance family wellbeing and relationships through expert
+                  guidance, skill-building workshops, and community support
+                  designed for growth.
+                </p>
               </div>
-              <h3 className="servicepage-card-title">Family Enrichment</h3>
-              <p className="servicepage-text">
-                Enhance family wellbeing and relationships through expert
-                guidance, skill-building workshops, and community support
-                designed for growth.
-              </p>
-            </div>
+            </Link>
           </div>
 
           <div className="hero-buttons">

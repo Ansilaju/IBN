@@ -6,6 +6,7 @@
 
 .mainabout {
   background-color: black;
+  margin-top: 50px;
 }
 
 .abouthed h2 {
@@ -35,12 +36,13 @@ h5 {
 
 .aboutbod {
   color: #f4ebeb;
-  margin-left: 100px;
+  margin-left: 70px;
   padding-top: 60px;
   line-height: 1.8;
 }
 .aboutbod p {
   color: gray;
+  text-align: center;
 }
 .abouthed p {
   color: gray;

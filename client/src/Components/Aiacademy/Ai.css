@@ -606,6 +606,7 @@ body {
 @media (max-width: 768px) {
   .hero {
     margin-top: 20px;
+    height: 65vh;
   }
 }
 
@@ -618,12 +619,6 @@ body {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
-  .hero-background img {
-    display: none;
-  }
-}
-
 .hero-background1 img {
   position: absolute;
   top: 0;
@@ -633,12 +628,6 @@ body {
   z-index: 1;
 }
 @media (max-width: 768px) {
-  .hero-background1 img {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
   .hero-background1 img {
     display: none;
   }

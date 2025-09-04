@@ -868,3 +868,7 @@ body {
 .contact-title {
   color: black;
 }
+.servicepage-card-link {
+  text-decoration: none;
+  color: inherit;
+}

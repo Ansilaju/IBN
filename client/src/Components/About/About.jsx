@@ -30,7 +30,7 @@ const About = () => {
     {
       question: "What is IBN Solutions all about?",
       answer:
-        "IBN Solutions (International Business Network) connects entrepreneurs, professionals, and investors to empower business growth through networking, digital marketing, AI training, and family enrichment programs.",
+        "IBN Solutions (International Business Network) connects enterprises, professionals, and investors to empower business growth through networking, digital marketing, AI training, and family enrichment programs.",
     },
     {
       question: "How can I join the Business Networking program?",
@@ -72,23 +72,24 @@ const About = () => {
       </div>
 
       <div className="aboutbod" data-aos="fade-right">
-        <h1>EMPOWERING. ETHICAL. ENTREPRENEURS.</h1>
+        <h1>EMPOWERING. ETHICAL. ENTERPRISES.</h1>
         <p>
           IBN Solutions is a business support platform that helps people grow
           with training, digital tools, posters, and strong networking. We bring
-          together business owners, young professionals, and learners into one
-          team. Our goal is to create a friendly and honest space. With daily
-          tips, expert help, and AI support, IBN makes business growth simple,
-          smart, and affordable for everyone. We look forward to working with
-          you and making a positive impact through our superior products and
-          services. IBN offers a powerful and proven referral system—but only if
-          you're willing to invest the time, economy, and commitment. Many
-          members report high returns and strong professional growth, while
-          others find the model demanding or not aligned with their business. We
-          believe "The truest wealth is a clean heart, a fair hand, and a name
-          others trust without fear." We fuel the growth of purpose-driven
-          professionals by building trust, sharing opportunities, and fostering
-          values-based business connections.
+          together business owners, young professionals, and learners <br></br>
+          into one team. Our goal is to create a friendly and honest space. With
+          daily tips, expert help, and AI support, IBN makes business growth
+          simple, smart, and affordable for everyone.<br></br> We look forward
+          to working with you and making a positive impact through our superior
+          products and services.<br></br> IBN offers a powerful and proven
+          referral system—but only if you're willing to invest the time,
+          economy, and commitment.<br></br> Many members report high returns and
+          strong professional growth, while others find the model demanding or
+          not aligned with their business.<br></br> We believe "The truest
+          wealth is a clean heart, a fair hand, and a name others trust without
+          fear."<br></br> We fuel the growth of purpose-driven professionals by
+          building trust, sharing opportunities, and fostering values-based
+          business connections.
         </p>
       </div>
 
@@ -156,15 +157,15 @@ const About = () => {
             {/* Paragraph that appears when the button is clicked */}
             {isMissionVisible && (
               <p>
-                Empower businesses through smart support. Connect entrepreneurs
-                in trusted networks. Grow with AI-driven Technologies.
+                Empower businesses through smart support. Connect enterprises in
+                trusted networks. Grow with AI-driven Technologies.
               </p>
             )}
             {isMissionVisible && (
               <p>
-                We envision a global community of ethical entrepreneurs
-                empowered by trusted relationships and structured networking,
-                driving business success and personal growth.
+                We envision a global community of ethical enterprises empowered
+                by trusted relationships and structured networking, driving
+                business success and personal growth.
               </p>
             )}
           </div>
