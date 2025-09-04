@@ -25,7 +25,10 @@ const Beginner = () => {
     e.preventDefault();
     setStatusMessage("Sending...");
     try {
-      await axios.post(`${BASE_URL}/api/courses/Fullstack/Register`, formData);
+      await axios.post(
+        `${BASE_URL}/api/courses/advancedmastery/Register`,
+        formData
+      );
       setStatusMessage("Registered successfully ✅");
       setFormData({ Name: "", Qualification: "", Email: "", Phone: "" });
     } catch (error) {
