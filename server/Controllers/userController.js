@@ -6,7 +6,7 @@ export const registerUser = async (req, res) => {
 
   try {
     // ✅ Validate required fields
-    if (!BusinessName || !Place || !PhoneNumber) {
+    if (!Name || !BusinessName || !Place || !PhoneNumber) {
       return res.status(400).json({ message: "Required fields missing" });
     }
 
@@ -22,21 +22,21 @@ export const registerUser = async (req, res) => {
     const savedUser = await newUser.save();
 
     const transporter = nodemailer.createTransport({
-      service: "gmail", // You can use other services like 'Outlook', 'Yahoo', etc., or specify host/port for custom SMTP
+      service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, // Your sending email address
-        pass: process.env.EMAIL_PASS, // Your email password or app password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER, // Sender address
-      to: process.env.RECEIVER_EMAIL, // Recipient address
+      from: process.env.EMAIL_USER,
+      to: process.env.RECEIVER_EMAIL,
       subject: "New User Registration",
       html: `
         <h3>New User Registered</h3>
         <p><strong>Name:</strong> ${Name || "N/A"}</p>
-    
+        <p>strong>Email:</strong> ${Email}</p>
         <p><strong>Business Name:</strong> ${BusinessName}</p>
         <p><strong>District:</strong> ${Place}</p>
         <p><strong>Phone Number:</strong> ${PhoneNumber}</p>

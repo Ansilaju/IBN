@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  faEnvelope,
-  faBuilding,
-  faMapMarkerAlt,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+
 import "./userForm.css";
 import {
   FaBuilding,
@@ -84,10 +78,9 @@ const UserForm = () => {
                 <input
                   type="email"
                   name="Email"
-                  placeholder="E-mail"
+                  placeholder="E-mail(Optional)"
                   value={formData.Email}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
