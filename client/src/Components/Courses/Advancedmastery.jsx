@@ -41,7 +41,7 @@ const Beginner = () => {
     <div className="bodd">
       <main className="center">
         <section className="card" role="region" aria-label="Registration form">
-          <h1 className="title">Advanced Matery in Digital Marketing</h1>
+          <h1 className="title">Advanced Mastery in Digital Marketing</h1>
           <form className="form" onSubmit={handleSubmit} autoComplete="on">
             <div className="field">
               <input
