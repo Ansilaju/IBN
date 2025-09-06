@@ -31,7 +31,7 @@ const BE = () => {
           </p>
           <div className="family-card-grid">
             <div className="family-card">
-              <img src="/famm3.webp" alt="" />
+              <img src="/famm3.webp" alt="" loading="lazy" />
               <h2>Family Financial Literacy</h2>
 
               <p>
@@ -40,7 +40,7 @@ const BE = () => {
               </p>
             </div>
             <div className="family-card">
-              <img src="/famm2.webp" alt="" />
+              <img src="/famm2.webp" alt="" loading="lazy" />
               <h2>Parenting Excellence</h2>
 
               <p>
@@ -49,7 +49,7 @@ const BE = () => {
               </p>
             </div>
             <div className="family-card">
-              <img src="/famm8.webp" alt="" />
+              <img src="/famm8.webp" alt="" loading="lazy" />
 
               <h2>Relationship Management</h2>
               <p>
@@ -58,7 +58,7 @@ const BE = () => {
               </p>
             </div>
             <div className="family-card">
-              <img src="/famm5.webp" alt="" />
+              <img src="/famm5.webp" alt="" loading="lazy" />
               <h2>Community Unity Programs</h2>
 
               <p>
@@ -67,7 +67,7 @@ const BE = () => {
               </p>
             </div>
             <div className="family-card">
-              <img src="/famm1.webp" alt="" />
+              <img src="/famm1.webp" alt="" loading="lazy" />
               <h2>Youth & Teen Guidance</h2>
 
               <p>
@@ -83,7 +83,7 @@ const BE = () => {
             <h2 className="ibns-heading">Programs We Have Conducted</h2>
             <div className="ibns-grid">
               <div className="ibns-card">
-                <img src="/famm4.webp" alt="" />
+                <img src="/famm4.webp" alt="" loading="lazy" />
                 <h3 className="ibns-card-title">Parenting Workshops</h3>
                 <p className="ibns-card-text">
                   Training sessions to strengthen parent-child relationships
@@ -91,7 +91,7 @@ const BE = () => {
                 </p>
               </div>
               <div className="ibns-card">
-                <img src="/famm6.webp" alt="" />
+                <img src="/famm6.webp" alt="" loading="lazy" />
                 <h3 className="ibns-card-title">Youth Empowerment</h3>
                 <p className="ibns-card-text">
                   Engaging activities and mentoring designed to build
@@ -99,7 +99,7 @@ const BE = () => {
                 </p>
               </div>
               <div className="ibns-card">
-                <img src="/famm7.webp" alt="" />
+                <img src="/famm7.webp" alt="" loading="lazy" />
                 <h3 className="ibns-card-title">Family Enrichment Retreats</h3>
                 <p className="ibns-card-text">
                   Retreat programs focusing on work-life balance, spirituality,
@@ -107,7 +107,7 @@ const BE = () => {
                 </p>
               </div>
               <div className="ibns-card">
-                <img src="/famm5.webp" alt="" />
+                <img src="/famm5.webp" alt="" loading="lazy" />
                 <h3 className="ibns-card-title">Community Building</h3>
                 <p className="ibns-card-text">
                   Initiatives that connect families, create social support
