@@ -98,7 +98,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-
+.family-card img {
+  height: 30vh;
+  width: 100%;
+}
+.ibns-card img {
+  height: 30vh;
+  width: 100%;
+}
 .family-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 15px 35px rgba(21, 2, 116, 0.25);

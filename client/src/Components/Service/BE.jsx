@@ -31,20 +31,26 @@ const BE = () => {
           </p>
           <div className="family-card-grid">
             <div className="family-card">
+              <img src="/public/famm3.webp" alt="" />
               <h2>Family Financial Literacy</h2>
+
               <p>
                 Household financial planning, money management, and literacy
                 workshops to empower families.
               </p>
             </div>
             <div className="family-card">
+              <img src="/public/famm2.webp" alt="" />
               <h2>Parenting Excellence</h2>
+
               <p>
                 Islamic & scientific parenting methods, mindfulness, and
                 effective parenting workshops.
               </p>
             </div>
             <div className="family-card">
+              <img src="/public/famm8.webp" alt="" />
+
               <h2>Relationship Management</h2>
               <p>
                 Couple communication & conflict resolution, family bonding
@@ -52,14 +58,18 @@ const BE = () => {
               </p>
             </div>
             <div className="family-card">
+              <img src="/public/famm5.webp" alt="" />
               <h2>Community Unity Programs</h2>
+
               <p>
                 Happy family events in mahallus, joint parent-youth activities,
                 and bonding initiatives.
               </p>
             </div>
             <div className="family-card">
+              <img src="/public/famm1.webp" alt="" />
               <h2>Youth & Teen Guidance</h2>
+
               <p>
                 Study excellence programs, value-based camps, and drug &
                 addiction awareness sessions.
@@ -73,6 +83,7 @@ const BE = () => {
             <h2 className="ibns-heading">Programs We Have Conducted</h2>
             <div className="ibns-grid">
               <div className="ibns-card">
+                <img src="/public/famm4.webp" alt="" />
                 <h3 className="ibns-card-title">Parenting Workshops</h3>
                 <p className="ibns-card-text">
                   Training sessions to strengthen parent-child relationships
@@ -80,6 +91,7 @@ const BE = () => {
                 </p>
               </div>
               <div className="ibns-card">
+                <img src="/public/famm6.webp" alt="" />
                 <h3 className="ibns-card-title">Youth Empowerment</h3>
                 <p className="ibns-card-text">
                   Engaging activities and mentoring designed to build
@@ -87,6 +99,7 @@ const BE = () => {
                 </p>
               </div>
               <div className="ibns-card">
+                <img src="/public/famm7.webp" alt="" />
                 <h3 className="ibns-card-title">Family Enrichment Retreats</h3>
                 <p className="ibns-card-text">
                   Retreat programs focusing on work-life balance, spirituality,
@@ -94,6 +107,7 @@ const BE = () => {
                 </p>
               </div>
               <div className="ibns-card">
+                <img src="/public/famm5.webp" alt="" />
                 <h3 className="ibns-card-title">Community Building</h3>
                 <p className="ibns-card-text">
                   Initiatives that connect families, create social support
