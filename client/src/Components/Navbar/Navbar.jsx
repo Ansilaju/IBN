@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="navbar-container">
       <div className="navbar">
         <div className="icon">
-          <img src="/navlogo.webp" alt="IBN Solutions Logo" />
+          <img src="/logonavvvvv.webp" alt="IBN Solutions Logo" />
         </div>
 
         <nav className={`nav-links ${isOpen ? "active" : ""}`}>
