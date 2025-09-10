@@ -15,9 +15,9 @@ const Portfolio = () => {
     { category: "poster", img: "/poster10.webp" },
 
     { category: "poster", img: "/poster13.webp" },
-    { category: "website", img: "/website1.webp" },
-    { category: "website", img: "/website2.webp" },
-    { category: "website", img: "/website3.webp" },
+    { category: "website", img: "/vivo.webp" },
+    { category: "website", img: "/amk.webp" },
+    { category: "website", img: "/ibm.webp" },
     { category: "courses", img: "/poster2.webp" },
     { category: "courses", img: "/poster3.webp" },
     { category: "courses", img: "/poster4.webp" },
